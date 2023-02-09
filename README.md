@@ -3,10 +3,10 @@
 
 ```bash
 # Download
-app -d "https://youtube.com/video?=97fgyf6f3"
+app -s "https://youtube.com/video?=97fgyf6f3"
 
 # List file
-app -L
+app -l
 1. lofi_hip-hop.mp3 - 00:3:46
 2. jaz-classic.mp3 -  03:10:23
 3. fone_music.mp3 - 02:32:19
@@ -15,6 +15,10 @@ app -L
 # Play music
 app -p 2
 # ffplay jaz-classic.mp3
+
+# Delete file
+app -d 3
+# fone_music.mp3
 ```
 
 # Стек
@@ -30,3 +34,8 @@ app -p 2
 4. Сохранить в БД
 5. Вывод все файлов
 6. Запуск файла по `id`
+
+Доп
+- Чистая архитектура
+- Возможность переключить музыку по горячим клавишам (Многопоточность)
+- Вывод статисктики (какую музыку слушаем часто)
