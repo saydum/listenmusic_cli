@@ -2,7 +2,7 @@
 
 ```bash
 # Download
-app -s "https://youtube.com/video?=97fgyf6f3"
+# app -s "https://youtube.com/video?=97fgyf6f3"
 
 # List file
 app -l
@@ -21,5 +21,6 @@ app -d 3
 ```
 
 # Стек
-- ~~Java~~ Python
+- Python
 - mplayer
+- SQLite
