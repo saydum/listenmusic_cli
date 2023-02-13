@@ -1,9 +1,21 @@
 package listenmusic_cli;
 
-import listenmusic_cli.cmd.ParserCmd;
+
+import java.io.File;
+import java.util.List;
+import java.util.Objects;
 
 public class Main {
     public static void main(String[] args) {
-        new ParserCmd(args).parser();
+
+        final String path = "/home/saydum/Music/";
+        List<String> fileList;
+
+        File files = new File(path);
+        fileList = List.of(Objects.requireNonNull(files.list()));
+
+        System.out.println("mplayer " + path + fileList.get(0));
+
     }
 }
+
